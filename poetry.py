@@ -27,18 +27,18 @@ def lines_printed_backwards(lines_list):
     will print the poem lines out in reverse with the line numbers reversed'''
     #reverse the lines_list
     lines_list.reverse()
-# 
+#
 # for lines in poem:
     print(lines_list)
 
     #TODO: use loop to print out items in lines_list
     pass
 
-# def lines_printed_random():
-#     '''randomly select lines from a list of strings and print them out in random order'''
-#     lines_list.random()
-#     print(lines_list)
-#     pass
+def lines_printed_random(lines_list):
+    '''randomly select lines from a list of strings and print them out in random order'''
+    import random
+    random.shuffle(lines_list)
+    print(lines_list)
 
 def my_custom_function():
     '''does something of my choosing TODO: comment later'''
@@ -48,4 +48,4 @@ def my_custom_function():
 #TODO: get poem string into list of lines
 lines_list = poem.split("\n")
 lines_printed_backwards(lines_list)
-# lines_printed_random()
+lines_printed_random(lines_list)
