@@ -1,5 +1,5 @@
 # backwards-poetry
-poem = "BE HERE NOW.
+"BE HERE NOW.
 I find myself, In Time.
 Yesterday consists of moments;
 Now passed through
