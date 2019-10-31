@@ -22,10 +22,11 @@ All present Now, this moment…
 Within Me.
 Right Now.'''
 
+# Custom Function
 def lines_printed_numbered(lines_list):
     '''prints a numbered list'''
     for index, value in enumerate(lines_list, 1):
-        print("{}. {}".format(index, value))
+        print("{} {}".format(index, value))
 
 def lines_printed_backwards(lines_list):
     '''this function takes in a list of strings containing the lines of your poem as arguments and
@@ -34,8 +35,7 @@ def lines_printed_backwards(lines_list):
     i= len(lines_list)
     lines_list.reverse()
     for line in lines_list:
-        print(line)
-        print(i)
+        print(i, line)
         i = i-1
     print(line)
 
