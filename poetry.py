@@ -22,32 +22,38 @@ All present Now, this moment…
 Within Me.
 Right Now.'''
 
-def lines_printed_backwards(lines_list):
-    '''this function takes in a list of strings containing the lines of your poem as arguments and
-    will print the poem lines out in reverse with the line numbers reversed'''
-    #reverse the lines_list
-    lines_list.reverse()
-    print(lines_printed_numbered(lines_list)
-    #TODO: use loop to print out items in lines_list
-
-def lines_printed_random(lines_list):
-    '''randomly select lines from a list of strings and print them out in random order'''
-    import random
-    random.shuffle(lines_list)
-    print(lines_printed_numbered(lines_list))
-
 def lines_printed_numbered(lines_list):
     '''prints a numbered list'''
     for index, value in enumerate(lines_list, 1):
         print("{}. {}".format(index, value))
 
+def lines_printed_backwards(lines_list):
+    '''this function takes in a list of strings containing the lines of your poem as arguments and
+    will print the poem lines out in reverse with the line numbers reversed'''
+    #reverse the lines_list
+    i= len(lines_list)
+    lines_list.reverse()
+    for line in lines_list:
+        print(line)
+        print(i)
+        i = i-1
+    print(line)
 
+#use loop to print out items in lines_list
 
-#testing code
-#TODO: get poem string into list of lines
+def lines_printed_random(lines_list):
+    '''randomly select lines from a list of strings and print them out in random order'''
+    import random
+    for line in lines_list:
+        random.shuffle(lines_list)
+        print(line)
+
+#get poem string into list of lines
 lines_list = poem.split("\n")
 lines_printed_numbered(lines_list)
 print( )
+print("BACKWARDS")
 lines_printed_backwards(lines_list)
 print( )
+print("RANDOMIZED")
 lines_printed_random(lines_list)
