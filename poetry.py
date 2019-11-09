@@ -49,6 +49,7 @@ def lines_printed_random(lines_list):
 
 #get poem string into list of lines
 lines_list = poem.split("\n")
+
 lines_printed_numbered(lines_list)
 print( )
 print("BACKWARDS")
