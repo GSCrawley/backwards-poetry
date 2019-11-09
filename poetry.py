@@ -39,7 +39,6 @@ def lines_printed_backwards(lines_list):
         i = i-1
     print(line)
 
-#use loop to print out items in lines_list
 
 def lines_printed_random(lines_list):
     '''randomly select lines from a list of strings and print them out in random order'''
